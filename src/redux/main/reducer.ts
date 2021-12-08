@@ -3,12 +3,39 @@ import { createReducer } from "@reduxjs/toolkit";
 import { changeColor } from "./actions";
 
 
-const defaultState = {
+export const defaultState = {
   colors: {
     green: false,
     red: false,
     blue: false
   },
+  cards: [
+    {
+      "id": 1,
+      "color": "green",
+      "name": "Aasdfasdf"
+    },
+    {
+      "id": 2,
+      "color": "red",
+      "name": "xcvb"
+    },
+    {
+      "id": 3,
+      "color": "blue",
+      "name": "tyui"
+    },
+    {
+      "id": 4,
+      "color": "red",
+      "name": "123"
+    },
+    {
+      "id": 5,
+      "color": "green",
+      "name": "456786"
+    }
+  ]
 }
 
 const mainReducer = createReducer(defaultState, {
